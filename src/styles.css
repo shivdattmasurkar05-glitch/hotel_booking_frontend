@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f4f6fa; color: #1f2937; }
+.container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+.navbar { display: flex; align-items: center; gap: 20px; background: #0f766e; padding: 12px 24px; flex-wrap: wrap; }
+.navbar h1 { margin: 0 auto 0 0; font-size: 18px; color: #fff; }
+.navbar a { color: #ccfbf1; text-decoration: none; }
+.navbar a.active { color: #fff; font-weight: 600; border-bottom: 2px solid #fff; }
+.card { background: #fff; border-radius: 8px; padding: 16px; margin-bottom: 14px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+.card h3 { margin-top: 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.big { font-size: 30px; font-weight: 700; margin: 0; }
+.form { display: flex; flex-direction: column; gap: 10px; }
+.form label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+.filters { display: flex; gap: 10px; margin-bottom: 14px; }
+input, select, textarea { padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; font: inherit; }
+button { padding: 6px 12px; border: 0; border-radius: 6px; background: #0f766e; color: #fff; cursor: pointer; font: inherit; }
+button.danger { background: #dc2626; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid #e5e7eb; }
+.badge { padding: 2px 8px; border-radius: 999px; font-size: 12px; color: #fff; background: #6b7280; }
+.badge-available, .badge-done, .badge-checked-in { background: #16a34a; }
+.badge-occupied, .badge-in-progress { background: #2563eb; }
+.badge-cleaning, .badge-pending, .badge-reserved { background: #d97706; }
+.badge-maintenance, .badge-cancelled { background: #dc2626; }
+.badge-checked-out { background: #6b7280; }
+.priority-high { border-left: 4px solid #dc2626; }
+.priority-medium { border-left: 4px solid #d97706; }
+.priority-low { border-left: 4px solid #16a34a; }
+.capitalize { text-transform: capitalize; }
+.muted { color: #6b7280; } .error { color: #dc2626; }
